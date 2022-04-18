@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".networkingretrofit.DetailActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JUDUL FILM"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:id="@+id/detail_judul_film"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_below="@id/detail_judul_film"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/detail_image_film"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_image_film"
+        android:text="TANGGAL"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:id="@+id/detail_tanggal_film"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_tanggal_film"
+        android:id="@+id/detail_sutradara_film"
+        android:gravity="center"
+        android:text="SUTRADARA FILM"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_deskripsi_film"
+        android:text="DESKRIPSI FILM"
+        android:layout_below="@+id/detail_sutradara_film"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_delete"
+        android:text="HAPUS DATA"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_update"
+        android:text="UPDATE"
+        android:layout_above="@id/button_delete"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
